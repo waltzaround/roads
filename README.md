@@ -26,7 +26,7 @@ MAPBOX_TOKEN="pk.your_public_token"
 
 Wrangler loads this file for local development. Restart Wrangler after changing it. `.dev.vars` is ignored and excluded from the source archive. `MAPBOX_ACCESS_TOKEN` and the earlier `VITE_MAPBOX_TOKEN` key are accepted as aliases.
 
-The Worker exposes only the public Mapbox token through `/api/config`. Other environment values stay on the server. Secret Mapbox tokens starting with `sk.` are rejected. The token is read at runtime, so changing it does not require rebuilding the frontend. Restrict the public token to your deployed domain in Mapbox. For local development, allow the exact URL `http://localhost:5178` (and `http://localhost:5177` if using Vite hot reload). A localhost restriction does not authorize the numeric `127.0.0.1` address; specifying the local port avoids Mapbox's default-port restriction. See [Mapbox URL restrictions](https://docs.mapbox.com/accounts/guides/tokens/).
+The Worker exposes only the public Mapbox token through `/api/config`. Other environment values stay on the server. Secret Mapbox tokens starting with `sk.` are rejected. The token is read at runtime, so changing it does not require rebuilding the frontend. Restrict the public token to `https://roads.walt.online` and test the map on the deployed site. Localhost is intentionally excluded from the token's allowed URLs; the local UI remains usable while Mapbox requests are denied. See [Mapbox URL restrictions](https://docs.mapbox.com/accounts/guides/tokens/).
 
 Without a token, the map shows a waiting state; project search, filters, and details remain usable. The map uses Mapbox only, with no substitute geography.
 
@@ -42,9 +42,9 @@ The public token is still visible to the browser; storing it as a Worker secret 
 
 The floating left panel contains the name, compact totals, methodology, search, and unified filter dropdown. Selecting a project slides the list out and the detail card into the same top-left position. **Back to projects** reverses the transition while preserving filters, list position, and keyboard focus. Reduced-motion preferences disable the animation.
 
-## Deploy later
+## Deploy with Wrangler
 
-`wrangler.jsonc` configures the Worker entrypoint, static assets from `dist`, SPA fallback, and Worker-first `/api/*` routes. No deployment runs automatically.
+`wrangler.jsonc` configures the Worker entrypoint, static assets from `dist`, SPA fallback, Worker-first `/api/*` routes, and the `roads.walt.online` custom domain. Development commands do not deploy.
 
 ```sh
 npm run build
@@ -52,7 +52,7 @@ npx wrangler login
 npx wrangler deploy
 ```
 
-Or run `npm run deploy` to build and deploy together. Cloudflare Git builds can use `npm run build` followed by `npx wrangler deploy`. Configure the Mapbox token as a runtime variable, not a Vite build variable. Connect `roads.walt.online` as a custom domain when deploying; the interface name alone does not configure DNS.
+Or run `npm run deploy` to build and deploy together. Cloudflare Git builds can use `npm run build` followed by `npx wrangler deploy`. Configure the Mapbox token as a runtime variable, not a Vite build variable. Wrangler manages the configured custom domain. The alternate workers.dev endpoint is disabled.
 
 ## Checks
 

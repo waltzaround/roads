@@ -1,6 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "nz-road-atlas",
+  "account_id": "e3a5db9d597f4c74ff53668d9cae079e",
+  "workers_dev": false,
+  "routes": [{ "pattern": "roads.walt.online", "custom_domain": true }],
   "main": "worker/index.ts",
   "compatibility_date": "2026-10-09",
   "assets": {
