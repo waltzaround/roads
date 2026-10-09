@@ -1,6 +1,6 @@
 # roads.walt.online
 
-A fullscreen New Zealand road explorer built with React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Mapbox GL JS, and Cloudflare Workers.
+An interactive explorer of New Zealand’s Roads of National Significance (RoNS) and Roads of Regional Significance (RoRS), covering project locations, available costs and delivery status. Built with React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Mapbox GL JS, and Cloudflare Workers.
 
 ## Run with Wrangler
 
@@ -72,7 +72,7 @@ Data tests cover duplicate exclusions, weighted rates, filters, Māori macrons, 
 - `src/components/project-filters.tsx`: programme/island/status dropdown.
 - `src/components/road-detail.tsx`: costs, scope, lifecycle, and public sources.
 - `src/components/ui/`: editable shadcn/ui primitives.
-- `src/data/roads.json`: all 35 supplied entries.
+- `src/data/roads.json`: all 35 entries with expanded public references and research notes.
 - `src/lib/roads.ts`: types, formatting, filtering, and totals.
 - `src/index.css`: Tailwind theme, responsive layout, and transitions.
 - `worker/index.ts`: runtime config API and asset handling.
@@ -80,6 +80,6 @@ Data tests cover duplicate exclusions, weighted rates, filters, Māori macrons, 
 
 ## Data
 
-The supplied data is preserved and has not been independently refreshed. Headline totals exclude three explicitly overlapping entries. Costed length and blended cost per kilometre only use projects with both a cost and comparable length. Costs mix estimates, allocations, and packages and do not represent a complete programme budget. All figures are NZD. Map coordinates and corridor lines are approximate.
+References were reviewed on 9 October 2026, prioritising the ten entries without costs. NZTA project pages, investment cases, maps and updates were added across all 35 entries, with selected status and timeline corrections. The surviving 34-page National 2023 policy is preserved unmodified in `public/sources/national-transport-for-the-future-2023.pdf`, with source and SHA-256 recorded alongside it. Policy amounts were checked against page 32, corrected where mismatched, and removed where unsupported; rates require a matching verified length. These remain historical estimates, not current approved budgets. See [policy costing audit](docs/policy-costing-audit-2026-10-09.md). See [research notes](docs/project-research-2026-10-09.md) for scope matches and unresolved costs. Headline totals exclude three explicitly overlapping entries. Costed length and blended cost per kilometre only use projects with both a cost and comparable length. Costs mix estimates, allocations, and packages and do not represent a complete programme budget. All figures are NZD. Map coordinates and corridor lines are approximate.
 
 Cloudflare references: [local environment variables](https://developers.cloudflare.com/workers/local-development/environment-variables/), [static asset bindings](https://developers.cloudflare.com/workers/static-assets/binding/), and [Worker routing](https://developers.cloudflare.com/workers/static-assets/routing/worker-script/).

@@ -3,13 +3,13 @@ import type { Map as MapboxMap, GeoJSONSource } from 'mapbox-gl'
 import type { FeatureCollection, Point } from 'geojson'
 import { Plus, Minus, Maximize, Crosshair, Map, LoaderCircle, ChevronLeft, AlertCircle } from 'lucide-react'
 import { RoadDetail } from './road-detail'
-import { type Road } from '@/lib/roads'
+import { statusColors, statusLabels, statusOrder, type Road } from '@/lib/roads'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 const centreOf = (r: Road) => r.coords[Math.floor(r.coords.length / 2)]
-const routeColor = (r: Road) => r.programme === 'National significance' ? '#8ca7f5' : '#53c0a2'
+const dotColor = (r: Road) => statusColors[r.status]
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
 function Control({ label, children, onClick, disabled }: { label: string; children: React.ReactNode; onClick: () => void; disabled?: boolean }) {
@@ -25,7 +25,7 @@ export function RoadMap({ roads, selected, onSelect, detailOpen, onBack }: { roa
   const [liveState, setLiveState] = useState<'waiting' | 'loading' | 'ready' | 'error'>('loading')
   const previousSelection = useRef(selected?.id)
   const previousDetailOpen = useRef(detailOpen)
-  const geojson = useMemo<FeatureCollection<Point, { id: number; color: string; name: string }>>(() => ({ type: 'FeatureCollection', features: roads.map(r => ({ type: 'Feature', properties: { id: r.id, color: routeColor(r), name: r.name }, geometry: { type: 'Point', coordinates: centreOf(r) } })) }), [roads])
+  const geojson = useMemo<FeatureCollection<Point, { id: number; color: string; name: string }>>(() => ({ type: 'FeatureCollection', features: roads.map(r => ({ type: 'Feature', properties: { id: r.id, color: dotColor(r), name: r.name }, geometry: { type: 'Point', coordinates: centreOf(r) } })) }), [roads])
 
   function fitCountry(instance: MapboxMap, duration = 0) {
     const compact = window.innerWidth <= 760
@@ -63,12 +63,10 @@ export function RoadMap({ roads, selected, onSelect, detailOpen, onBack }: { roa
         })
         instance.on('load', () => {
           if (cancelled || !instance) return
-          instance.addSource('projects', { type: 'geojson', data: { type: 'FeatureCollection', features: latest.current.roads.map(r => ({ type: 'Feature', properties: { id: r.id, color: routeColor(r), name: r.name }, geometry: { type: 'Point', coordinates: centreOf(r) } })) } })
-          instance.addSource('selected-route', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } })
-          instance.addLayer({ id: 'selected-route', type: 'line', source: 'selected-route', layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#b6ceff', 'line-width': 5 } })
+          instance.addSource('projects', { type: 'geojson', data: { type: 'FeatureCollection', features: latest.current.roads.map(r => ({ type: 'Feature', properties: { id: r.id, color: dotColor(r), name: r.name }, geometry: { type: 'Point', coordinates: centreOf(r) } })) } })
           instance.addLayer({ id: 'project-glow', type: 'circle', source: 'projects', paint: { 'circle-color': ['get', 'color'], 'circle-radius': 13, 'circle-opacity': 0.12 } })
           instance.addLayer({ id: 'project-points', type: 'circle', source: 'projects', paint: { 'circle-color': ['get', 'color'], 'circle-radius': 6, 'circle-stroke-color': '#1b2330', 'circle-stroke-width': 2 } })
-          instance.addLayer({ id: 'selected-point', type: 'circle', source: 'projects', filter: ['==', ['get', 'id'], latest.current.selected?.id ?? -1], paint: { 'circle-color': '#e3edff', 'circle-radius': 9, 'circle-stroke-color': '#719bff', 'circle-stroke-width': 3 } })
+          instance.addLayer({ id: 'selected-point', type: 'circle', source: 'projects', filter: ['==', ['get', 'id'], latest.current.selected?.id ?? -1], paint: { 'circle-color': ['get', 'color'], 'circle-radius': 8, 'circle-stroke-color': '#f7f9fc', 'circle-stroke-width': 2 } })
           instance.addLayer({ id: 'project-hit', type: 'circle', source: 'projects', paint: { 'circle-radius': 18, 'circle-opacity': 0 } })
           instance.on('click', 'project-hit', event => { const id = Number(event.features?.[0]?.properties?.id); if (id) latest.current.onSelect(id) })
           instance.on('mouseenter', 'project-hit', () => { if (instance) instance.getCanvas().style.cursor = 'pointer' })
@@ -87,7 +85,6 @@ export function RoadMap({ roads, selected, onSelect, detailOpen, onBack }: { roa
     const m = map.current
     ;(m.getSource('projects') as GeoJSONSource)?.setData(geojson)
     m.setFilter('selected-point', ['==', ['get', 'id'], selected?.id ?? -1])
-    ;(m.getSource('selected-route') as GeoJSONSource)?.setData({ type: 'FeatureCollection', features: selected && selected.coords.length > 1 ? [{ type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: selected.coords } }] : [] })
     if (selected && (selected.id !== previousSelection.current || (detailOpen && !previousDetailOpen.current))) focusProject()
     previousSelection.current = selected?.id
     previousDetailOpen.current = detailOpen
@@ -116,7 +113,7 @@ export function RoadMap({ roads, selected, onSelect, detailOpen, onBack }: { roa
       <div className="detail-navigation"><Button variant="ghost" className="detail-back" aria-label="Back to projects" onClick={onBack}><ChevronLeft size={16} />Back to projects</Button></div>
       <div id="selected-road-details" className="detail-content"><RoadDetail road={selected} /></div>
     </div>}
-    <div className="map-legend"><span><i className="national-dot" />National significance</span><span><i className="regional-dot" />Regional significance</span></div>
-    <div className="map-footnote">Approximate routes · Indicative NZD</div>
+    <div className="map-legend">{statusOrder.filter(status => roads.some(road => road.status === status)).map(status => <span key={status}><i style={{ background: statusColors[status] }} />{statusLabels[status]}</span>)}</div>
+    <div className="map-footnote">Approximate locations · Indicative NZD</div>
   </section>
 }

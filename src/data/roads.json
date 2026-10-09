@@ -3,8 +3,8 @@
     "id": 1,
     "name": "Whangārei to Port Marsden",
     "island": "North",
-    "km": 24,
-    "cost": 2,
+    "km": 22,
+    "cost": 1.31,
     "coords": [
       [
         174.32,
@@ -20,30 +20,47 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 83.33333333333333,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": 59.54545454545455,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Port Marsden Highway to Whangārei",
+        "https://www.nzta.govt.nz/projects/northland-corridor/port-marsden-highway-to-whangarei"
+      ],
+      [
+        "NZTA — Northland investment case and reports",
+        "https://www.nzta.govt.nz/projects/northland-corridor/publications"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "design",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Preferred route identified; construction has not started.",
+    "statusNote": "Preferred route identified. Following the July 2026 pipeline update, further planning for Te Hana to Whangārei is progressing more slowly; designation timing depends on future funding.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — verified against p.32; not a current approved budget",
+    "lengthLabel": "22 km — 2023 policy scope (p.5)",
+    "researchNote": "Policy scope is 22km, correcting the supplied 24km. The 2023 costing table records $1.310b; this is a historical policy estimate. NZTA’s subsequent preliminary range was $1.85–2.45b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "rateLabel": "Calculated using the 2023 policy cost and matching length"
   },
   {
     "id": 2,
     "name": "Warkworth to Wellsford",
     "island": "North",
     "km": 26,
-    "cost": 2,
+    "cost": 2.2,
     "coords": [
       [
         174.66,
@@ -59,30 +76,47 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 76.92307692307692,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": 84.61538461538461,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Warkworth to Te Hana — current project",
+        "https://www.nzta.govt.nz/projects/northland-corridor/warkworth-to-te-hana"
+      ],
+      [
+        "NZTA — Project phases and history",
+        "https://www.nzta.govt.nz/projects/northland-corridor/warkworth-to-te-hana/project-phases"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "procurement",
-    "started": "2026",
-    "finish": null,
-    "finishType": "unknown",
-    "statusNote": "PPP awarded; detailed design and early works are beginning in 2026.",
+    "started": null,
+    "finish": "2033",
+    "finishType": "expected",
+    "statusNote": "Now presented by NZTA as Warkworth to Te Hana. Detailed design and early construction are expected later in 2026; main delivery timing remains indicative.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — verified against p.32; not a current approved budget",
+    "lengthLabel": "26 km — original supplied scope",
+    "researchNote": "The 2023 costing table records $2.200b for the 26km Warkworth–Te Hana route, correcting the supplied $2.000b. NZTA’s subsequent preliminary range was $2.9–3.75b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "rateLabel": "Calculated using the 2023 policy cost and matching length"
   },
   {
     "id": 3,
     "name": "Northwest Alternative State Highway",
     "island": "North",
-    "km": 18,
-    "cost": 2.3,
+    "km": null,
+    "cost": 2.325,
     "coords": [
       [
         174.63,
@@ -98,13 +132,25 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 127.77777777777777,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — North West Auckland — routes and business cases",
+        "https://www.nzta.govt.nz/projects/te-tupu-ngatahi-supporting-growth/related-projects/north-west-auckland"
+      ],
+      [
+        "NZTA — North West detailed business case",
+        "https://www.nzta.govt.nz/assets/projects/alternative-state-highway/north-west-detailed-business-case.pdf"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "pre_construction",
@@ -114,13 +160,19 @@
     "statusNote": "Route protection and project development are underway; there is no construction date.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — verified against p.32; not a current approved budget",
+    "lengthLabel": "Comparable length not verified",
+    "researchNote": "The 2023 costing table records $2.325b, correcting the rounded $2.300b. It does not verify the supplied 18km length, so a comparable length and rate are unavailable. NZTA’s subsequent preliminary range was $2.5–4b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "suppliedKm": 18,
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 4,
     "name": "Mill Road",
     "island": "North",
-    "km": 21.5,
+    "km": 7.5,
     "cost": 1.3,
     "coords": [
       [
@@ -137,29 +189,46 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 60.46511627906977,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": 173.33333333333334,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Mill Road — current staging",
+        "https://www.nzta.govt.nz/projects/south-auckland-projects/mill-road"
+      ],
+      [
+        "NZTA — Stage 1 investment case — April 2025",
+        "https://www.nzta.govt.nz/assets/projects/mill-road/mill-road-stage-1-investment-case-summary.pdf"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "pre_construction",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Stage 1 consenting and pre-implementation work are underway.",
+    "statusNote": "Stage 1 (Manukau to Alfriston) is in pre-implementation following investment case approval in April 2025. Design and consenting continue; construction funding is not yet available.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — verified against p.32; not a current approved budget",
+    "lengthLabel": "Approx. 7.5 km — Stage 1 (2023 policy, p.10)",
+    "researchNote": "The $1.300b policy estimate covers the approximately 7.5km Manukau–Alfriston first stage, not the full 21.5km corridor. Length and rate now use Stage 1. NZTA’s subsequent preliminary range was $1.45–1.95b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "rateLabel": "Calculated using the 2023 policy cost and matching length"
   },
   {
     "id": 5,
     "name": "East West Link",
     "island": "North",
-    "km": 7,
+    "km": null,
     "cost": 1.85,
     "coords": [
       [
@@ -176,13 +245,25 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 264.2857142857143,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — East West Link — July 2026 pipeline update",
+        "https://www.nzta.govt.nz/projects/east-west-link"
+      ],
+      [
+        "NZTA — Project history and revised route",
+        "https://www.nzta.govt.nz/projects/east-west-link/project-history"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "paused",
@@ -192,14 +273,20 @@
     "statusNote": "Design and consenting work paused in July 2026; construction has not started.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — verified against p.32; not a current approved budget",
+    "lengthLabel": "Comparable length not verified",
+    "researchNote": "The policy costing table records $1.850b (the project narrative rounds it to $1.9b). It does not verify the supplied 7km length; a comparable length and rate are unavailable. NZTA’s subsequent preliminary range was $2.35–3.1b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "suppliedKm": 7,
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 6,
     "name": "Cambridge to Piarere",
     "island": "North",
     "km": 16,
-    "cost": 0.72,
+    "cost": 0.721,
     "coords": [
       [
         175.47,
@@ -215,13 +302,25 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 45,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": 45.0625,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Cambridge to Piarere Expressway",
+        "https://www.nzta.govt.nz/projects/cambridge-to-piarere"
+      ],
+      [
+        "NZTA — Business cases, maps and updates",
+        "https://www.nzta.govt.nz/projects/cambridge-to-piarere/publications"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "early_works",
@@ -231,14 +330,19 @@
     "statusNote": "Early works are underway; major construction is expected from 2027.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — verified against p.32; not a current approved budget",
+    "lengthLabel": "16 km — original supplied scope",
+    "researchNote": "The 2023 costing table records $721m for 16km, correcting the rounded $720m. NZTA’s subsequent preliminary range was $1.3–1.7b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "rateLabel": "Calculated using the 2023 policy cost and matching length"
   },
   {
     "id": 7,
     "name": "Tauriko West — SH29",
     "island": "North",
-    "km": 6.8,
-    "cost": 2.1,
+    "km": null,
+    "cost": 1.9,
     "coords": [
       [
         176.1,
@@ -254,30 +358,52 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 308.8235294117647,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Tauriko West — route protection",
+        "https://www.nzta.govt.nz/projects/tauriko-west-tupenga/route-protection"
+      ],
+      [
+        "NZTA — Ōmanawa Bridge replacement — first phase",
+        "https://www.nzta.govt.nz/projects/tauriko-west-tupenga/sh29-omanawa-bridge-replacement"
+      ],
+      [
+        "NZTA — Separate Tauriko enabling works",
+        "https://www.nzta.govt.nz/projects/tauriko-west-tupenga/tauriko-enabling-works"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
-    "status": "pre_construction",
+    "status": "partial",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "The main SH29 project has not started; separate enabling works are underway.",
+    "statusNote": "The wider SH29/SH29A route is being protected. The first phase, Ōmanawa Bridge replacement, began construction in October 2025; separate Tauriko enabling works are also under construction.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — verified against p.32; not a current approved budget",
+    "lengthLabel": "Comparable length not verified",
+    "researchNote": "The policy costing table records $1.900b for Tauriko West, correcting $2.100b. The supplied 6.8km length was not verified for this scope, so length and rate are unavailable. Separate enabling works and Tākitimu North Link are not a substitute for the whole project. NZTA’s subsequent preliminary range was $2.55–3.2b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "suppliedKm": 6.8,
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 8,
     "name": "Hawke’s Bay Expressway",
     "island": "North",
-    "km": 22,
-    "cost": 0.7,
+    "km": 24,
+    "cost": null,
     "coords": [
       [
         176.91,
@@ -293,30 +419,43 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 31.818181818181817,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Hawke’s Bay Expressway — current project",
+        "https://www.nzta.govt.nz/projects/sh2-hawkes-bay-expressway"
+      ],
+      [
+        "NZTA — Investment case — August 2025",
+        "https://www.nzta.govt.nz/assets/projects/sh2-hawkes-bay-expressway/hawkes-bay-expressway-investment-case-summary.pdf"
       ]
     ],
     "status": "construction",
     "started": "2025-11",
     "finish": "2029-12",
     "finishType": "expected",
-    "statusNote": "The four-laning project is under construction.",
+    "statusNote": "Construction is underway on 7.5km of four-laning between Taradale Road and south of Links Road/Pākōwhai Road, with completion expected in late 2029.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "No verified separate project costing; supplied amount removed",
+    "lengthLabel": "24 km — full 2023 proposal; current works cover 7.5 km",
+    "researchNote": "The policy describes a 24km expressway upgrade on page 28 but gives no project-specific $700m costing. That supplied amount is removed from totals. Current construction covers a separate 7.5km stage; no verified whole-corridor budget was established.",
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 9,
     "name": "Levin to Foxton",
     "island": "North",
     "km": 24,
-    "cost": 1.5,
+    "cost": null,
     "coords": [
       [
         175.28,
@@ -332,30 +471,43 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 62.5,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Levin to Foxton — existing-road safety works",
+        "https://www.nzta.govt.nz/projects/wellington-northern-corridor/otaki-to-north-of-levin-te-pae-o-tararua/existing-highways-safety-and-speed/sh1-levin-to-foxton-safety-improvements"
+      ],
+      [
+        "NZTA — Previous investigation and scope",
+        "https://www.nzta.govt.nz/projects/wellington-northern-corridor/otaki-to-north-of-levin-te-pae-o-tararua/existing-highways-safety-and-speed/sh1-levin-to-foxton-safety-improvements/previous-investigation"
       ]
     ],
     "status": "not_started",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "The major 24km proposal has not started; separate safety works exist.",
+    "statusNote": "Legacy 24km major-road proposal. Current NZTA sources describe separate existing-SH1 safety works; a matching active expressway contract was not established.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "No verified separate project costing; supplied amount removed",
+    "lengthLabel": "24 km — original supplied scope",
+    "researchNote": "No matching Levin–Foxton expressway or $1.500b costing appears in the 2023 policy. Its 24km commitment is Ōtaki to north of Levin, a different corridor. The unsupported amount is removed from totals; current Levin–Foxton safety works are a separate scope.",
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 10,
     "name": "Petone to Grenada",
     "island": "North",
-    "km": 7,
-    "cost": 1.2,
+    "km": null,
+    "cost": 1.8,
     "coords": [
       [
         174.88,
@@ -371,30 +523,48 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 171.42857142857142,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Petone to Grenada — current project",
+        "https://www.nzta.govt.nz/projects/petone-to-grenada"
+      ],
+      [
+        "NZTA — Ground investigations and funding conditions",
+        "https://www.nzta.govt.nz/projects/petone-to-grenada/investigations"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "design",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Investigations and route-protection work only.",
+    "statusNote": "Ground investigations began in November 2025. Planning is continuing to make applications lodgement-ready, but designation and consents await confirmation of future funding.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — $1.8b Petone–Grenada + Cross Valley Link package (p.32)",
+    "lengthLabel": "Comparable length not verified",
+    "researchNote": "The 2023 costing table records $1.800b for Petone–Grenada AND Cross Valley Link, correcting $1.200b. This is a combined historical package estimate. The supplied 7km cannot represent both projects, so a comparable length and rate are unavailable. NZTA’s subsequent preliminary range was $1.75–2.65b excluding Cross Valley Link, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "suppliedKm": 7,
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 11,
     "name": "Belfast to Pegasus",
     "island": "South",
-    "km": 25,
-    "cost": 0.5,
+    "km": null,
+    "cost": 0.27,
     "coords": [
       [
         172.63,
@@ -410,13 +580,25 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 20,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Belfast to Pegasus and Woodend Bypass",
+        "https://www.nzta.govt.nz/projects/sh1-belfast-to-pegasus-motorway-and-woodend-bypass"
+      ],
+      [
+        "NZTA — Early works factsheet — February 2026",
+        "https://www.nzta.govt.nz/assets/projects/sh1-belfast-to-pegasus-motorway-and-woodend-bypass/belfast-to-pegasus-motorway-and-woodend-bypass-works-infosheet-february-2026.pdf"
+      ],
+      [
+        "NZTA — Late-2023 preliminary costing comparison (pp.1–5)",
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia2-2024/indicative-cost-estimate.pdf"
       ]
     ],
     "status": "early_works",
@@ -426,14 +608,20 @@
     "statusNote": "Early works only; main construction funding is not confirmed.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "2023 policy estimate — $270m including Woodend Bypass (p.32)",
+    "lengthLabel": "Comparable length not verified",
+    "researchNote": "The 2023 policy records $270m for Belfast–Pegasus including Woodend Bypass, correcting $500m. It does not validate the supplied 25km length, so a comparable length and rate are unavailable. NZTA’s subsequent preliminary range was $0.55–1.0b, in June 2023 dollars. NZTA warns these ranges may not reflect current GPS 2024 scopes; they are comparison evidence, not approved budgets.",
+    "suppliedKm": 25,
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 12,
     "name": "Woodend Bypass",
     "island": "South",
-    "km": 12,
-    "cost": 0.24,
+    "km": null,
+    "cost": null,
     "coords": [
       [
         172.67,
@@ -449,13 +637,17 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 20,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Woodend Bypass — part of Belfast to Pegasus",
+        "https://www.nzta.govt.nz/projects/sh1-belfast-to-pegasus-motorway-and-woodend-bypass"
       ]
     ],
     "status": "early_works",
@@ -465,14 +657,20 @@
     "statusNote": "Part of the Belfast–Pegasus project; early works only.",
     "aliasOf": "Belfast to Pegasus",
     "excludeFromTotals": true,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "No verified separate project costing; supplied amount removed",
+    "lengthLabel": "Comparable length not verified",
+    "researchNote": "The policy includes Woodend within the $270m Belfast–Pegasus package and publishes no separate $240m bypass costing or 12km length. Those unsupported figures are removed. This overlapping entry remains excluded from totals.",
+    "suppliedKm": 12,
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 13,
     "name": "Rolleston–Ashburton corridor [indicative]",
     "island": "South",
     "km": 78,
-    "cost": 1.3,
+    "cost": null,
     "coords": [
       [
         171.75,
@@ -488,13 +686,21 @@
       ]
     ],
     "programme": "National significance",
-    "rate": 16.666666666666668,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "rate": null,
+    "source": "National — Transport for the Future (archived 2023 PDF)",
+    "sourceUrl": "/sources/national-transport-for-the-future-2023.pdf#page=32",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "National — 2023 policy costing table (archived PDF, p.32)",
+        "/sources/national-transport-for-the-future-2023.pdf#page=32"
+      ],
+      [
+        "NZTA — Canterbury regional update — September 2025",
+        "https://www.nzta.govt.nz/assets/planning-and-investment/nltp/2024/docs/regional-summaries/2025-update/canterbury-regional-update-2025.pdf"
+      ],
+      [
+        "NZTA — Rolleston access improvements",
+        "https://www.nzta.govt.nz/projects/sh1-rolleston"
       ]
     ],
     "status": "partial",
@@ -504,7 +710,12 @@
     "statusNote": "This legacy row relates to the wider corridor, not the Second Ashburton Bridge.",
     "aliasOf": "Rolleston to Ashburton upgrades",
     "excludeFromTotals": true,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "costLabel": "No verified separate project costing; supplied amount removed",
+    "lengthLabel": "78 km — original supplied scope",
+    "researchNote": "The policy lists Christchurch–Ashburton for further investigation on page 30; it publishes no $1.300b or 78km costing for this legacy corridor. The unsupported amount is removed. This overlapping entry remains excluded from totals.",
+    "rateLabel": "No verified comparable cost and length"
   },
   {
     "id": 14,
@@ -528,26 +739,36 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Northland Corridor — current programme",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/northland-corridor",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Northland Corridor — current programme",
+        "https://www.nzta.govt.nz/projects/northland-corridor"
+      ],
+      [
+        "NZTA — Te Hana to Whangārei investment case",
+        "https://www.nzta.govt.nz/assets/projects/northland-corridor/northland-corridor-investment-case-summary.pdf"
+      ],
+      [
+        "NZTA — Whangārei–Wellsford southern safety works — June 2023",
+        "https://www.nzta.govt.nz/assets/projects/sh1-whangarei-to-wellsford/sh1-whangarei-to-wellsford-safety-improvements-southern-section-factsheet-june-2023.pdf"
       ]
     ],
     "status": "not_started",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Superseded by individual Northland Corridor projects.",
+    "statusNote": "Legacy corridor proposal now represented by separate Northland Corridor projects and existing-road safety improvements. Delivery and funding vary by section.",
     "aliasOf": null,
     "excludeFromTotals": false,
     "corridorSegments": [
       "Warkworth to Te Hana",
       "Te Hana to Port Marsden",
       "Port Marsden to Whangārei"
-    ]
+    ],
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "Legacy 80km corridor proposal. NZTA now presents a 100km Warkworth–Whangārei programme in three sections, alongside separate existing-road safety works. The Te Hana–Whangārei investment case covers only part of the wider corridor; no matching total for this legacy entry was established."
   },
   {
     "id": 15,
@@ -571,22 +792,32 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Cambridge to Piarere — expressway and completed safety works",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/cambridge-to-piarere",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Cambridge to Piarere — expressway and completed safety works",
+        "https://www.nzta.govt.nz/projects/cambridge-to-piarere"
+      ],
+      [
+        "NZTA — Piarere to Taupō — includes Piarere to Tīrau",
+        "https://www.nzta.govt.nz/projects/sh1-taupo/sh1-piarere-to-taupo-network-improvements"
+      ],
+      [
+        "NZTA — Piarere to Tīrau safety map — September 2023",
+        "https://www.nzta.govt.nz/assets/projects/sh1-piarere-to-taupo-safe-roads-and-roadsides/SH1-Piarere-to-Tirau-safety-improvements-map-interim-plan-September-2023.pdf"
       ]
     ],
-    "status": "design",
+    "status": "partial",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Future corridor work is not yet construction-funded.",
+    "statusNote": "Cambridge–Piarere safety works were delivered during 2020–2024. The separate expressway is progressing, while Piarere–Tīrau improvements belong to the wider Piarere–Taupō safety programme.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "The legacy 27km Cambridge–Tīrau corridor spans the separate 16km Cambridge–Piarere expressway and Piarere–Tīrau safety works. The $18m on the Piarere–Taupō page is for first stages of that different programme. No combined cost for this entry was established."
   },
   {
     "id": 16,
@@ -610,22 +841,32 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Piarere to Taupō — $18m first stages",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh1-taupo/sh1-piarere-to-taupo-network-improvements",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Piarere to Taupō — $18m first stages",
+        "https://www.nzta.govt.nz/projects/sh1-taupo/sh1-piarere-to-taupo-network-improvements"
+      ],
+      [
+        "NZTA — Safety project updates",
+        "https://www.nzta.govt.nz/projects/sh1-taupo/sh1-piarere-to-taupo-network-improvements/media"
+      ],
+      [
+        "NZTA — Piarere to Tīrau safety map — September 2023",
+        "https://www.nzta.govt.nz/assets/projects/sh1-piarere-to-taupo-safe-roads-and-roadsides/SH1-Piarere-to-Tirau-safety-improvements-map-interim-plan-September-2023.pdf"
       ]
     ],
     "status": "partial",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Some safety sections are complete; the full corridor is not one active construction project.",
+    "statusNote": "NZTA reports two completed safety projects and a $18m first-stages estimate. Further corridor improvements will proceed when funding is available.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "NZTA publishes $18m for first stages, rather than for the full 105km corridor. This section-only amount is kept out of the headline total and cost per kilometre. Further improvements depend on funding."
   },
   {
     "id": 17,
@@ -649,22 +890,32 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Pōkeno to Mangatarata — on hold",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/pokeno-to-mangatarata",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Pōkeno to Mangatarata — on hold",
+        "https://www.nzta.govt.nz/projects/pokeno-to-mangatarata"
+      ],
+      [
+        "NZTA — Re-evaluation summary — October 2018",
+        "https://www.nzta.govt.nz/assets/projects/pokeno-to-mangatarata/SH2-Pokeno-to-Mangatarata-re-evaluation-summary.pdf"
+      ],
+      [
+        "NZTA — Historical $278m wider programme decision",
+        "https://www.nzta.govt.nz/partners/planning-and-investment/funding-and-investing/investment-decisions/board-decisions/investment-for-sh2-pokeno-to-mangatarata-improvements-programme"
       ]
     ],
-    "status": "not_started",
+    "status": "paused",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "The proposed corridor upgrade has not started.",
+    "statusNote": "The related Pōkeno–Mangatarata programme is listed by NZTA as on hold, with project cost to be confirmed. It was revised in 2018 to prioritise safety on the existing highway.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "The closest NZTA programme is Pōkeno–Mangatarata, whose current page lists the cost as to be confirmed and status as on hold. A historical $278m funding decision covers that wider programme, rather than this 23km entry; it is not used as this project’s total."
   },
   {
     "id": 18,
@@ -688,22 +939,28 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Pōkeno to Mangatarata — western part of corridor",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/pokeno-to-mangatarata",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Pōkeno to Mangatarata — western part of corridor",
+        "https://www.nzta.govt.nz/projects/pokeno-to-mangatarata"
+      ],
+      [
+        "NZTA — Recommended programme map — November 2018",
+        "https://www.nzta.govt.nz/assets/projects/pokeno-to-mangatarata/SH2-pokeno-to-mangatarata-recommended-programme-nov-2018.pdf"
       ]
     ],
     "status": "not_started",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "There is no single construction programme covering the full corridor.",
+    "statusNote": "This legacy corridor does not correspond to one current NZTA contract. The related western Pōkeno–Mangatarata programme is on hold; other sections have separate interventions.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "NZTA’s Pōkeno–Mangatarata project and 2018 programme map cover only the western part of this legacy 83km corridor. No single matching Mangatāwhiri–Waihī delivery programme or whole-corridor cost was established from the sources reviewed."
   },
   {
     "id": 19,
@@ -727,22 +984,32 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Takitimu North Link — Stages 1 and 2",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh2-waihi-to-tauranga-corridor/takitimu-north-link",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Takitimu North Link — Stages 1 and 2",
+        "https://www.nzta.govt.nz/projects/sh2-waihi-to-tauranga-corridor/takitimu-north-link"
+      ],
+      [
+        "NZTA — Waihī to Ōmokoroa — $164m safety project",
+        "https://www.nzta.govt.nz/projects/sh2-waihi-to-tauranga-corridor/sh2-waihi-to-omokoroa"
+      ],
+      [
+        "NZTA — Corridor maps and business cases",
+        "https://www.nzta.govt.nz/projects/sh2-waihi-to-tauranga-corridor/takitimu-north-link/publications"
       ]
     ],
     "status": "partial",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Several subprojects are complete or underway; the whole corridor is not one contract.",
+    "statusNote": "Several subprojects have different delivery dates. Takitimu North Link Stage 1 is under construction with completion due in 2028; Stage 2 is in designation. Waihī–Ōmokoroa safety upgrades include a remaining roundabout expected in late 2027.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "This 36km legacy corridor crosses several projects. NZTA publishes $164m for the 40km Waihī–Ōmokoroa safety project, which extends beyond Katikati and stops short of Tauranga. Takitimu North Link has separate stages. These scopes do not provide a comparable total for this entry."
   },
   {
     "id": 20,
@@ -766,22 +1033,28 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Hawke’s Bay Expressway — four-laning",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh2-hawkes-bay-expressway",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Hawke’s Bay Expressway — four-laning",
+        "https://www.nzta.govt.nz/projects/sh2-hawkes-bay-expressway"
+      ],
+      [
+        "NZTA — Earlier $36m expressway safety programme",
+        "https://www.nzta.govt.nz/projects/hawkes-bay-expressway-improvements"
       ]
     ],
     "status": "construction",
     "started": "2025-11",
     "finish": "2029-12",
     "finishType": "expected",
-    "statusNote": "This overlaps the Hawke’s Bay Expressway four-laning project.",
+    "statusNote": "Overlaps the costed Hawke’s Bay Expressway row. The current four-laning project covers 7.5km and is expected to finish in late 2029; earlier safety improvements are complete.",
     "aliasOf": "Hawke’s Bay Expressway",
     "excludeFromTotals": true,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "The current four-laning contract covers 7.5km from Taradale Road to south of Links Road/Pākōwhai Road. NZTA’s separate $36m completed safety programme is a different scope. This legacy 20km entry remains excluded as an overlap with the costed expressway row."
   },
   {
     "id": 21,
@@ -805,22 +1078,32 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Levin to Foxton safety improvements",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/wellington-northern-corridor/otaki-to-north-of-levin-te-pae-o-tararua/existing-highways-safety-and-speed/sh1-levin-to-foxton-safety-improvements",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Levin to Foxton safety improvements",
+        "https://www.nzta.govt.nz/projects/wellington-northern-corridor/otaki-to-north-of-levin-te-pae-o-tararua/existing-highways-safety-and-speed/sh1-levin-to-foxton-safety-improvements"
+      ],
+      [
+        "NZTA — Safety brochures and engagement reports",
+        "https://www.nzta.govt.nz/projects/wellington-northern-corridor/otaki-to-north-of-levin-te-pae-o-tararua/existing-highways-safety-and-speed/sh1-levin-to-foxton-safety-improvements/publications"
+      ],
+      [
+        "NZTA — Safety works factsheet — October 2024",
+        "https://www.nzta.govt.nz/assets/projects/sh1-levin-to-foxton-safety-improvements/sh1-levin-to-foxton-safety-improvements-info-sheet-october-2024.pdf"
       ]
     ],
     "status": "partial",
     "started": "2023-12",
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Existing SH1 safety improvements are being delivered in sections.",
+    "statusNote": "Existing SH1 safety works have delivered median barriers and turnaround bays; the programme also includes the Waitārere Beach Road roundabout. This is separate from a future major-road proposal.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "Sources describe roundabouts, barriers and turnaround bays on the existing highway, separate from any future expressway proposal. No verified cost for the complete 24km legacy entry was established; the 2024 factsheet describes the safety works."
   },
   {
     "id": 22,
@@ -844,22 +1127,32 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Richmond Transport Programme Business Case",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/richmond-transport-programme-business-case",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Richmond Transport Programme Business Case",
+        "https://www.nzta.govt.nz/projects/richmond-transport-programme-business-case"
+      ],
+      [
+        "NZTA — How Richmond and Nelson Future Access fit together",
+        "https://www.nzta.govt.nz/projects/richmond-transport-programme-business-case/frequently-asked-questions"
+      ],
+      [
+        "NZTA — Hope Bypass — separate project",
+        "https://www.nzta.govt.nz/projects/sh6-hope-bypass"
       ]
     ],
-    "status": "not_started",
+    "status": "design",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "No single 14km corridor construction project is currently underway.",
+    "statusNote": "Richmond’s programme business case was endorsed in May 2022. Nelson Future Access and Hope Bypass are separate programmes; the legacy 14km corridor is not one construction contract.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "NZTA describes Richmond’s programme business case, Nelson Future Access and Hope Bypass as separate scopes. Their individual figures cannot be treated as a total for this legacy 14km Nelson–Richmond corridor. No matching whole-corridor cost was established."
   },
   {
     "id": 23,
@@ -883,22 +1176,32 @@
     ],
     "programme": "Regional significance",
     "rate": null,
-    "source": "National 2023 transport policy",
-    "sourceUrl": "https://www.national.org.nz/transport",
+    "source": "NZTA — Canterbury regional update — separate SH1 projects",
+    "sourceUrl": "https://www.nzta.govt.nz/assets/planning-and-investment/nltp/2024/docs/regional-summaries/2025-update/canterbury-regional-update-2025.pdf",
     "sources": [
       [
-        "National 2023 transport policy",
-        "https://www.national.org.nz/transport"
+        "NZTA — Canterbury regional update — separate SH1 projects",
+        "https://www.nzta.govt.nz/assets/planning-and-investment/nltp/2024/docs/regional-summaries/2025-update/canterbury-regional-update-2025.pdf"
+      ],
+      [
+        "NZTA — Rolleston access improvements",
+        "https://www.nzta.govt.nz/projects/sh1-rolleston"
+      ],
+      [
+        "NZTA — Second Ashburton Bridge — separate local route",
+        "https://www.nzta.govt.nz/projects/second-ashburton-bridge"
       ]
     ],
     "status": "partial",
     "started": null,
     "finish": null,
     "finishType": "unknown",
-    "statusNote": "Separate corridor projects are being delivered individually.",
+    "statusNote": "The corridor is being addressed through separate SH1 safety and access projects. The September 2025 regional update lists Templeton–Selwyn River and Selwyn River–Ashburton improvements in construction.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09",
+    "researchNote": "The September 2025 Canterbury update identifies Templeton–Selwyn River and Selwyn River–Ashburton improvements separately. Rolleston access improvements and the Second Ashburton Bridge also have distinct scopes. No combined cost for this 68km entry was established."
   },
   {
     "id": 24,
@@ -923,15 +1226,19 @@
     "programme": "Regional significance",
     "rate": 118.57142857142857,
     "source": "NZTA — Penlink project page",
-    "sourceUrl": "https://www.nzta.govt.nz/projects/penlink?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/penlink",
     "sources": [
       [
         "NZTA — Penlink project page",
-        "https://www.nzta.govt.nz/projects/penlink?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/penlink"
       ],
       [
         "NZTA — $830m implementation business case",
-        "https://www.nzta.govt.nz/assets/projects/penlink/docs/bri-2453-penlink-implementation-business-case.pdf?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/assets/projects/penlink/docs/bri-2453-penlink-implementation-business-case.pdf"
+      ],
+      [
+        "NZTA — Penlink — current news and 2029 opening update",
+        "https://www.nzta.govt.nz/projects/penlink/media"
       ]
     ],
     "costLabel": "$830m approved funding; final cost subject to revision",
@@ -942,7 +1249,8 @@
     "statusNote": "The project is under construction and is now expected to open in 2029.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 25,
@@ -963,11 +1271,19 @@
     "programme": "Regional significance",
     "rate": 355,
     "source": "Beehive — Waihoehoe Road Upgrade driving forward",
-    "sourceUrl": "https://www.beehive.govt.nz/release/waihoehoe-road-upgrade-driving-forward?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.beehive.govt.nz/release/waihoehoe-road-upgrade-driving-forward",
     "sources": [
       [
         "Beehive — Waihoehoe Road Upgrade driving forward",
-        "https://www.beehive.govt.nz/release/waihoehoe-road-upgrade-driving-forward?utm_source=chatgpt.com"
+        "https://www.beehive.govt.nz/release/waihoehoe-road-upgrade-driving-forward"
+      ],
+      [
+        "NZTA — Waihoehoe Road — current project and timeline",
+        "https://www.nzta.govt.nz/projects/south-auckland-projects/waihoehoe-road-upgrade"
+      ],
+      [
+        "NZTA — Current works",
+        "https://www.nzta.govt.nz/projects/south-auckland-projects/waihoehoe-road-upgrade/whats-happening"
       ]
     ],
     "lengthLabel": "0.4 km funded section; eventual arterial ~4.5 km",
@@ -980,7 +1296,8 @@
     "statusNote": "Main works are underway; completion is expected in mid-2028.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 26,
@@ -1005,11 +1322,15 @@
     "programme": "Regional significance",
     "rate": 161.11111111111111,
     "source": "NZTA — Papakura to Bombay / Papakura–Drury",
-    "sourceUrl": "https://www.nzta.govt.nz/projects/south-auckland-projects/sh1-papakura-to-bombay?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/south-auckland-projects/sh1-papakura-to-bombay",
     "sources": [
       [
         "NZTA — Papakura to Bombay / Papakura–Drury",
-        "https://www.nzta.govt.nz/projects/south-auckland-projects/sh1-papakura-to-bombay?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/south-auckland-projects/sh1-papakura-to-bombay"
+      ],
+      [
+        "NZTA — Papakura to Bombay — maps and project updates",
+        "https://www.nzta.govt.nz/projects/south-auckland-projects/sh1-papakura-to-bombay/publications"
       ]
     ],
     "lengthLabel": "~4.5 km",
@@ -1021,7 +1342,8 @@
     "statusNote": "Stage 1A finished in August 2024; Stage 1B is under construction.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 27,
@@ -1038,11 +1360,15 @@
     "programme": "Regional significance",
     "rate": null,
     "source": "NZTA — SH1/SH29 intersection",
-    "sourceUrl": "https://nzta.govt.nz/projects/sh1-sh29-intersection?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh1-sh29-intersection",
     "sources": [
       [
         "NZTA — SH1/SH29 intersection",
-        "https://nzta.govt.nz/projects/sh1-sh29-intersection?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/sh1-sh29-intersection"
+      ],
+      [
+        "NZTA — Piarere roundabout — completion announcement, September 2025",
+        "https://www.nzta.govt.nz/projects/sh1-sh29-intersection/media"
       ]
     ],
     "lengthLabel": "Intersection project",
@@ -1053,7 +1379,8 @@
     "statusNote": "The Piarere roundabout project was completed in September 2025.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 28,
@@ -1078,11 +1405,15 @@
     "programme": "Regional significance",
     "rate": 20.363636363636363,
     "source": "NZTA — SH58 safety improvements",
-    "sourceUrl": "https://nzta.govt.nz/projects/sh58-safety-improvements?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh58-safety-improvements",
     "sources": [
       [
         "NZTA — SH58 safety improvements",
-        "https://nzta.govt.nz/projects/sh58-safety-improvements?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/sh58-safety-improvements"
+      ],
+      [
+        "NZTA — SH58 — current construction updates",
+        "https://www.nzta.govt.nz/projects/sh58-safety-improvements/media"
       ]
     ],
     "costLabel": "~$112m current estimate; $105m Crown funding recorded",
@@ -1093,7 +1424,8 @@
     "statusNote": "Earlier sections are complete; the final section remains under construction.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 29,
@@ -1110,11 +1442,19 @@
     "programme": "Regional significance",
     "rate": null,
     "source": "NZTA — Melling FAQ / cost",
-    "sourceUrl": "https://nzta.govt.nz/projects/sh2-melling-transport-improvements/about-the-project/frequently-asked-questions?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh2-melling-transport-improvements/about-the-project/frequently-asked-questions",
     "sources": [
       [
         "NZTA — Melling FAQ / cost",
-        "https://nzta.govt.nz/projects/sh2-melling-transport-improvements/about-the-project/frequently-asked-questions?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/sh2-melling-transport-improvements/about-the-project/frequently-asked-questions"
+      ],
+      [
+        "NZTA — Melling — construction programme",
+        "https://www.nzta.govt.nz/projects/sh2-melling-transport-improvements/construction-programme"
+      ],
+      [
+        "NZTA — Melling — construction announcements",
+        "https://www.nzta.govt.nz/projects/sh2-melling-transport-improvements/media"
       ]
     ],
     "lengthLabel": "Interchange / bridge project",
@@ -1126,7 +1466,8 @@
     "statusNote": "Early and main construction are underway; the main programme is expected in 2031.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 30,
@@ -1151,11 +1492,15 @@
     "programme": "Regional significance",
     "rate": null,
     "source": "NZTA — Queenstown package",
-    "sourceUrl": "https://www.nzta.govt.nz/projects/queenstown-package?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/queenstown-package",
     "sources": [
       [
         "NZTA — Queenstown package",
-        "https://www.nzta.govt.nz/projects/queenstown-package?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/queenstown-package"
+      ],
+      [
+        "NZTA — Queenstown — brochures, maps and updates",
+        "https://www.nzta.govt.nz/projects/queenstown-package/publications"
       ]
     ],
     "lengthLabel": "Multi-site package",
@@ -1167,7 +1512,8 @@
     "statusNote": "The multi-project package is underway; components have different completion dates.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 31,
@@ -1192,11 +1538,19 @@
     "programme": "Regional significance",
     "rate": null,
     "source": "NZTA — Walnut Avenue / Canterbury rural intersections",
-    "sourceUrl": "https://www.nzta.govt.nz/projects/walnut-avenue-intersection-improvements?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/walnut-avenue-intersection-improvements",
     "sources": [
       [
         "NZTA — Walnut Avenue / Canterbury rural intersections",
-        "https://www.nzta.govt.nz/projects/walnut-avenue-intersection-improvements?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/walnut-avenue-intersection-improvements"
+      ],
+      [
+        "NZTA — Walnut Avenue — project updates",
+        "https://www.nzta.govt.nz/projects/walnut-avenue-intersection-improvements/publications"
+      ],
+      [
+        "NZTA — Canterbury regional project delivery",
+        "https://www.nzta.govt.nz/assets/planning-and-investment/nltp/2024/docs/regional-summaries/2025-update/canterbury-regional-update-2025.pdf"
       ]
     ],
     "lengthLabel": "3 intersection projects",
@@ -1208,7 +1562,8 @@
     "statusNote": "The package contains several separately delivered intersection projects.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 32,
@@ -1225,23 +1580,28 @@
     "programme": "Regional significance",
     "rate": null,
     "source": "NZTA — SH1 Rolleston access improvements",
-    "sourceUrl": "https://nzta.govt.nz/projects/sh1-rolleston?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh1-rolleston",
     "sources": [
       [
         "NZTA — SH1 Rolleston access improvements",
-        "https://nzta.govt.nz/projects/sh1-rolleston?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/sh1-rolleston"
+      ],
+      [
+        "NZTA — Rolleston — construction staging",
+        "https://www.nzta.govt.nz/projects/sh1-rolleston/background"
       ]
     ],
     "lengthLabel": "Multiple junctions + bridge",
     "costLabel": "$180–200m",
     "status": "construction",
-    "started": "2026",
+    "started": "2025-10",
     "finish": "2028-12",
     "finishType": "expected",
-    "statusNote": "Main construction is underway; the overall programme is expected through 2028.",
+    "statusNote": "Stage 1 construction began in October 2025. NZTA schedules Stage 2 construction from October 2026, bridge opening in December 2027 and remaining upgrades through late 2028.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 33,
@@ -1266,15 +1626,19 @@
     "programme": "Regional significance",
     "rate": 24.4,
     "source": "NZTA — SH75 Halswell Road improvements",
-    "sourceUrl": "https://nzta.govt.nz/projects/sh75-halswell-road-improvements?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh75-halswell-road-improvements",
     "sources": [
       [
         "NZTA — SH75 Halswell Road improvements",
-        "https://nzta.govt.nz/projects/sh75-halswell-road-improvements?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/sh75-halswell-road-improvements"
       ],
       [
         "NZTA OIA — RoRS cost estimates",
-        "https://www.nzta.govt.nz/assets/About-us/docs/oia-2024/OIA-16213-response-letter.pdf?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/assets/About-us/docs/oia-2024/OIA-16213-response-letter.pdf"
+      ],
+      [
+        "NZTA — Halswell Road — final surfacing works, March 2026",
+        "https://www.nzta.govt.nz/assets/projects/sh75-halswell-road-improvements/sh75-halswell-road-improvements-night-works-final-surfacing-march-2026.pdf"
       ]
     ],
     "lengthLabel": "~2.5 km",
@@ -1286,7 +1650,8 @@
     "statusNote": "The project was completed in April 2026.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 34,
@@ -1307,11 +1672,19 @@
     "programme": "Regional significance",
     "rate": 56.50406504065041,
     "source": "Beehive — Work on Second Ashburton Bridge underway",
-    "sourceUrl": "https://www.beehive.govt.nz/release/work-second-ashburton-bridge-underway?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.beehive.govt.nz/release/work-second-ashburton-bridge-underway",
     "sources": [
       [
         "Beehive — Work on Second Ashburton Bridge underway",
-        "https://www.beehive.govt.nz/release/work-second-ashburton-bridge-underway?utm_source=chatgpt.com"
+        "https://www.beehive.govt.nz/release/work-second-ashburton-bridge-underway"
+      ],
+      [
+        "NZTA — Second Ashburton Bridge — current project",
+        "https://www.nzta.govt.nz/projects/second-ashburton-bridge"
+      ],
+      [
+        "NZTA — Project history and funding",
+        "https://www.nzta.govt.nz/projects/second-ashburton-bridge/about-the-project/project-history"
       ]
     ],
     "lengthLabel": "2.46 km bridge + connecting road",
@@ -1324,7 +1697,8 @@
     "statusNote": "Main construction is underway; opening is expected around the end of 2027.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   },
   {
     "id": 35,
@@ -1349,22 +1723,31 @@
     "programme": "Regional significance",
     "rate": null,
     "source": "NZTA — SH76 Brougham Street upgrade",
-    "sourceUrl": "https://www.nzta.govt.nz/projects/sh76-brougham-street-upgrade?utm_source=chatgpt.com",
+    "sourceUrl": "https://www.nzta.govt.nz/projects/sh76-brougham-street-upgrade",
     "sources": [
       [
         "NZTA — SH76 Brougham Street upgrade",
-        "https://www.nzta.govt.nz/projects/sh76-brougham-street-upgrade?utm_source=chatgpt.com"
+        "https://www.nzta.govt.nz/projects/sh76-brougham-street-upgrade"
+      ],
+      [
+        "NZTA — Brougham Street — current work notices and maps",
+        "https://www.nzta.govt.nz/projects/sh76-brougham-street-upgrade/publications"
+      ],
+      [
+        "NZTA — Brougham Street — construction updates",
+        "https://www.nzta.govt.nz/projects/sh76-brougham-street-upgrade/media"
       ]
     ],
     "lengthLabel": "Corridor / intersection package",
     "costLabel": "$100–152m",
     "status": "construction",
     "started": "2025-07",
-    "finish": null,
+    "finish": "2030-01",
     "finishType": "expected",
-    "statusNote": "Stage 1 is underway; Stage 2 has no confirmed overall finish.",
+    "statusNote": "Stage 1 pedestrian and cycle bridge construction is underway; the bridge was lifted into place in June 2026. The wider upgrade is delivered in two stages; NZTA lists an indicative programme end in January 2030.",
     "aliasOf": null,
     "excludeFromTotals": false,
-    "corridorSegments": null
+    "corridorSegments": null,
+    "referencesReviewedOn": "2026-10-09"
   }
 ]

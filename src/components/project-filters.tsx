@@ -6,7 +6,7 @@ import { statusLabels, type Filters } from '@/lib/roads'
 export function ProjectFilters({ filters, onChange, onReset }: { filters: Filters; onChange: (key: keyof Filters, value: string) => void; onReset: () => void }) {
   const count = [filters.programme, filters.island, filters.status].filter(value => value !== 'all').length
   const groups = [
-    { key: 'programme' as const, label: 'Programme', options: [['all', 'All projects'], ['National significance', 'National significance'], ['Regional significance', 'Regional significance']] },
+    { key: 'programme' as const, label: 'Programme', options: [['all', 'Both programmes'], ['National significance', 'Roads of National Significance'], ['Regional significance', 'Roads of Regional Significance']] },
     { key: 'island' as const, label: 'Island', options: [['all', 'Both islands'], ['North', 'North Island'], ['South', 'South Island']] },
     { key: 'status' as const, label: 'Status', options: [['all', 'All statuses'], ...Object.entries(statusLabels)] },
   ]

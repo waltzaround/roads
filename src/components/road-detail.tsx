@@ -16,8 +16,9 @@ export function RoadDetail({ road }: { road: Road }) {
     <div className="detail-fact"><CalendarDays size={15} /><span>{road.finishType === 'actual' ? 'Completed' : 'Expected finish'}</span><b>{formatDate(road.finish)}</b></div>
     {road.started && <div className="detail-fact"><CalendarDays size={15} /><span>Works started</span><b>{formatDate(road.started)}</b></div>}
     <p className="detail-description">{road.statusNote}</p>
+    {road.researchNote && <p className="scope-note">{road.researchNote}</p>}
     {road.aliasOf && <p className="overlap-note"><Info size={14} />Overlaps {road.aliasOf}. Excluded from headline totals.</p>}
     {road.corridorSegments && <p className="scope-note">Corridor sections: {road.corridorSegments.join(' · ')}</p>}
-    <div className="detail-sources"><span>PUBLIC SOURCES</span>{road.sources.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noopener noreferrer">{label.replace('NZTA — ', '').replace('Beehive — ', '')}<ExternalLink size={13} /></a>)}</div>
+    <div className="detail-sources"><span>PUBLIC SOURCES{road.referencesReviewedOn && ` · References reviewed ${formatDate(road.referencesReviewedOn)}`}</span>{road.sources.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noopener noreferrer">{label.replace('NZTA — ', '').replace('Beehive — ', '')}<ExternalLink size={13} /></a>)}</div>
   </article>
 }

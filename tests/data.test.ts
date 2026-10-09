@@ -29,3 +29,19 @@ test('unpublished values sort last and never become zero-dollar projects', () =>
   assert.equal(list.at(-1)!.rate, null)
   assert.equal(money(null), 'Not published')
 })
+
+test('researched projects have distinct public references and scope notes for uncosted corridors', () => {
+  for (const road of roads) {
+    assert.ok(road.sources.length >= 2, road.name)
+    assert.equal(new Set(road.sources.map(([, url]) => url)).size, road.sources.length, road.name)
+    assert.ok(road.sources.some(([, url]) => new URL(url, "https://roads.walt.online").hostname === 'www.nzta.govt.nz'), road.name)
+    for (const [, url] of road.sources) {
+      assert.equal(new URL(url, "https://roads.walt.online").protocol, 'https:')
+      assert.ok(!url.includes('utm_source='))
+    }
+    if (road.cost == null) {
+      assert.ok(road.researchNote, road.name)
+      assert.equal(road.rate, null, road.name)
+    }
+  }
+})

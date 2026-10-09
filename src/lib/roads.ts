@@ -5,6 +5,7 @@ export interface Road {
   id: number; name: string; island: 'North' | 'South'; km: number | null; cost: number | null;
   coords: [number, number][]; programme: string; rate: number | null;
   sources: [string, string][]; lengthLabel?: string; costLabel?: string; rateLabel?: string;
+  researchNote?: string; referencesReviewedOn?: string;
   status: Status; started: string | null; finish: string | null; finishType: string;
   statusNote: string; aliasOf: string | null; excludeFromTotals: boolean; corridorSegments: string[] | null;
 }
@@ -13,6 +14,11 @@ export const statusLabels: Record<Status, string> = {
   completed: 'Completed', construction: 'Under construction', early_works: 'Early works',
   pre_construction: 'Pre-construction', design: 'Design', procurement: 'Procurement',
   paused: 'Paused', not_started: 'Not started', partial: 'Partially delivered',
+}
+export const statusOrder: Status[] = ['not_started', 'design', 'procurement', 'pre_construction', 'early_works', 'construction', 'partial', 'paused', 'completed']
+export const statusColors: Record<Status, string> = {
+  not_started: '#a8b0bf', design: '#5ec2e0', procurement: '#b7a4e0', pre_construction: '#e89255',
+  early_works: '#e2b15c', construction: '#6d8ef5', partial: '#3dbaa8', paused: '#e39aa2', completed: '#63c796',
 }
 export function money(value: number | null) {
   if (value == null) return 'Not published'
