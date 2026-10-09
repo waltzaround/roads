@@ -1,0 +1,2 @@
+# Public Mapbox browser token. Leave empty until you are ready to connect the map.
+MAPBOX_TOKEN=""
