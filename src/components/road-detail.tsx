@@ -1,10 +1,9 @@
-import { ExternalLink, MapPin, Route, CalendarDays, Info } from 'lucide-react'
+import { ExternalLink, Route, CalendarDays, Info } from 'lucide-react'
 import { RoadStatus } from './road-status'
 import { costRate, formatDate, money, type Road } from '@/lib/roads'
 
 export function RoadDetail({ road }: { road: Road }) {
   return <article className="road-detail" aria-label="Selected project details" aria-live="polite">
-    <div className="detail-kicker"><MapPin size={13} />{road.island} Island<span className="detail-id">#{String(road.id).padStart(2, '0')}</span></div>
     <h2>{road.name.replace(' [indicative]', '')}</h2>
     <div className="detail-programme">{road.programme === 'National significance' ? 'Road of National Significance' : 'Road of Regional Significance'}</div>
     <RoadStatus status={road.status} />

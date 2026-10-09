@@ -57,7 +57,11 @@ export default function App() {
       <h1 className="sr-only">New Zealand road project explorer</h1>
       <RoadMap roads={list} selected={selected} onSelect={pickProject} detailOpen={detailOpen} onBack={backToProjects} />
       <Button variant="outline" className="sidebar-toggle" aria-label={sidebarOpen ? 'Hide project sidebar' : 'Show project sidebar'} aria-expanded={sidebarOpen} aria-controls="project-sidebar" onClick={() => { setDetailOpen(false); setSidebarOpen(open => !open) }}>{sidebarOpen ? <PanelLeftClose size={17} /> : <PanelLeftOpen size={17} />}roads.walt.online<span>{list.length}</span></Button>
-      <aside className="project-panel" id="project-sidebar" aria-label="Explore projects" data-state={sidebarOpen ? 'open' : 'closed'} aria-hidden={!sidebarOpen} inert={!sidebarOpen}>
+      <aside className="project-panel" id="project-sidebar" aria-label="Explore projects" data-state={sidebarOpen ? 'open' : 'closed'} aria-hidden={!sidebarOpen} inert={!sidebarOpen} onTransitionEnd={event => {
+        if (event.target === event.currentTarget && event.propertyName === 'transform' && sidebarOpen && lastOpenedProject.current != null) {
+          event.currentTarget.querySelector<HTMLButtonElement>(`.project-row[data-road-id="${lastOpenedProject.current}"]`)?.focus({ preventScroll: true })
+        }
+      }}>
         <header className="site-header">
           <a href="#" className="brand" aria-label="roads.walt.online home" onClick={() => { setFilters(defaultFilters); setSelectedId(5) }}>roads.walt.online</a>
           <Methodology />

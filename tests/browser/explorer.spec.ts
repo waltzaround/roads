@@ -60,9 +60,9 @@ test('selecting a card exchanges panels and Back preserves filters, scroll, and 
   await expect(page.locator('.project-panel')).toHaveAttribute('inert', '')
   await expect(page.locator('.road-detail h2')).toBeVisible()
   await expect(page.locator('.road-detail h2')).toHaveText('Queenstown upgrade package')
-  const detailPosition = (await page.locator('.detail-shell').boundingBox())!
-  expect(detailPosition.x).toBe(page.viewportSize()!.width <= 760 ? 12 : 20)
-  expect(detailPosition.y).toBe(page.viewportSize()!.width <= 760 ? 12 : 20)
+  const inset = page.viewportSize()!.width <= 760 ? 12 : 20
+  await expect.poll(async () => (await page.locator('.detail-shell').boundingBox())!.x).toBe(inset)
+  expect((await page.locator('.detail-shell').boundingBox())!.y).toBe(inset)
   await expect(page.getByRole('button', { name: 'Back to projects' })).toBeFocused()
   await page.getByRole('button', { name: 'Back to projects' }).click()
   await expect(page.locator('.detail-shell')).toBeHidden()

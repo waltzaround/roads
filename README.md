@@ -12,9 +12,9 @@ cp .dev.vars.example .dev.vars
 npm run dev
 ```
 
-`npm run dev` builds the React app and starts **Wrangler** at `http://127.0.0.1:5178`. An existing local `.dev.vars` is already prepared; preserve it when adding your token.
+`npm run dev` builds the React app and starts **Wrangler**. Open `http://localhost:5178`. An existing local `.dev.vars` is already prepared; preserve it when adding your token.
 
-For frontend hot reload, leave Wrangler running and run `npm run dev:ui` in a second terminal. This opens Vite at `http://127.0.0.1:5177` and proxies `/api` to Wrangler. Rebuild with `npm run build` to update the Wrangler-served frontend.
+For frontend hot reload, leave Wrangler running and run `npm run dev:ui` in a second terminal. Open Vite at `http://localhost:5177`; it proxies `/api` to Wrangler. Rebuild with `npm run build` to update the Wrangler-served frontend.
 
 ## Mapbox configuration
 
@@ -26,7 +26,7 @@ MAPBOX_TOKEN="pk.your_public_token"
 
 Wrangler loads this file for local development. Restart Wrangler after changing it. `.dev.vars` is ignored and excluded from the source archive. `MAPBOX_ACCESS_TOKEN` and the earlier `VITE_MAPBOX_TOKEN` key are accepted as aliases.
 
-The Worker exposes only the public Mapbox token through `/api/config`. Other environment values stay on the server. Secret Mapbox tokens starting with `sk.` are rejected. The token is read at runtime, so changing it does not require rebuilding the frontend. Restrict the public token to your deployed domain in Mapbox.
+The Worker exposes only the public Mapbox token through `/api/config`. Other environment values stay on the server. Secret Mapbox tokens starting with `sk.` are rejected. The token is read at runtime, so changing it does not require rebuilding the frontend. Restrict the public token to your deployed domain in Mapbox. For local development, allow the exact URL `http://localhost:5178` (and `http://localhost:5177` if using Vite hot reload). A localhost restriction does not authorize the numeric `127.0.0.1` address; specifying the local port avoids Mapbox's default-port restriction. See [Mapbox URL restrictions](https://docs.mapbox.com/accounts/guides/tokens/).
 
 Without a token, the map shows a waiting state; project search, filters, and details remain usable. The map uses Mapbox only, with no substitute geography.
 

@@ -108,7 +108,11 @@ export function RoadMap({ roads, selected, onSelect, detailOpen, onBack }: { roa
       <p>{liveState === 'error' ? 'Check the access token and connection, then reload.' : liveState === 'loading' ? 'Getting the map ready.' : 'Ready to connect when you supply the access token.'}</p>
     </div>}
     <div className="map-controls"><Control label="Zoom in" onClick={() => map.current?.zoomIn()} disabled={!ready}><Plus size={18} /></Control><Control label="Zoom out" onClick={() => map.current?.zoomOut()} disabled={!ready}><Minus size={18} /></Control><span /><Control label="Show all of New Zealand" onClick={() => { if (map.current) fitCountry(map.current, 600) }} disabled={!ready}><Maximize size={17} /></Control><Control label="Focus selected project" onClick={focusProject} disabled={!ready || !selected}><Crosshair size={18} /></Control></div>
-    {selected && <div className="detail-shell" data-state={detailOpen ? 'open' : 'closed'} aria-hidden={!detailOpen} inert={!detailOpen}>
+    {selected && <div className="detail-shell" data-state={detailOpen ? 'open' : 'closed'} aria-hidden={!detailOpen} inert={!detailOpen} onTransitionEnd={event => {
+      if (event.target === event.currentTarget && event.propertyName === 'transform' && detailOpen) {
+        event.currentTarget.querySelector<HTMLButtonElement>('.detail-back')?.focus({ preventScroll: true })
+      }
+    }}>
       <div className="detail-navigation"><Button variant="ghost" className="detail-back" aria-label="Back to projects" onClick={onBack}><ChevronLeft size={16} />Back to projects</Button></div>
       <div id="selected-road-details" className="detail-content"><RoadDetail road={selected} /></div>
     </div>}
