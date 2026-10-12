@@ -78,7 +78,7 @@ test('selecting a card exchanges panels and Back preserves filters, scroll, and 
   await expect(project).toBeFocused()
 })
 
-test('fullscreen Mapbox waiting state and methodology remain accessible', async ({ page }) => {
+test('fullscreen Mapbox waiting state and About remain accessible', async ({ page }) => {
   await page.goto('/')
   await expect(page.getByRole('heading', { name: 'Your Mapbox map goes here' })).toBeVisible()
   await expect(page.locator('.overview-map')).toHaveCount(0)
@@ -86,11 +86,11 @@ test('fullscreen Mapbox waiting state and methodology remain accessible', async 
   const viewport = page.viewportSize()!
   expect(await page.locator('.map-panel').boundingBox()).toEqual({ x: 0, y: 0, width: viewport.width, height: viewport.height })
   await openSidebar(page)
-  await page.getByRole('button', { name: 'Methodology', exact: true }).click()
-  await expect(page.getByRole('heading', { name: 'About these road programmes' })).toBeVisible()
+  await page.getByRole('button', { name: 'About', exact: true }).click()
+  await expect(page.getByRole('heading', { name: 'About' })).toBeVisible()
   await page.keyboard.press('Escape')
   await expect(page.getByRole('dialog')).toHaveCount(0)
-  await expect(page.getByRole('button', { name: 'Methodology', exact: true })).toBeFocused()
+  await expect(page.getByRole('button', { name: 'About', exact: true })).toBeFocused()
 })
 
 test('reduced motion disables panel animation', async ({ page }) => {

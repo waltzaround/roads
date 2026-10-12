@@ -38,6 +38,10 @@ npx wrangler secret put MAPBOX_TOKEN
 
 The public token is still visible to the browser; storing it as a Worker secret only keeps it out of source configuration. `.dev.vars` is local and is not uploaded during deployment.
 
+## Google Analytics
+
+The `roads.walt.online` GA4 property uses measurement ID `G-12FKZ6G5YF` and web stream `16094639557`, under the existing Walter Lim account. Reporting uses New Zealand time and NZD. The Google tag in `index.html` loads only on `roads.walt.online`, keeping local development and preview traffic out of the property. Deploy the built site to activate collection.
+
 ## Interface
 
 The floating left panel contains the name, compact totals, methodology, search, and unified filter dropdown. Selecting a project slides the list out and the detail card into the same top-left position. **Back to projects** reverses the transition while preserving filters, list position, and keyboard focus. Reduced-motion preferences disable the animation.
